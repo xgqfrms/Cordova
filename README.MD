@@ -1,4 +1,4 @@
-# this a my cordova test projects!  (for Android Apps)
+# this is a repo of my cordova test projects!  (for Android Apps)
 ## Windows10 x64 Pro + JDK1.8.0_77 + 
 
 # work directory :  

@@ -36,24 +36,31 @@ var app = {
 		// app.receivedEvent('deviceready');
         // jquery
         $(document).ready(function(){
-		ready();}
+            device_ready();
+        });
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
         var parentElement = document.getElementById(id);
         var listeningElement = parentElement.querySelector('.listening');
         var receivedElement = parentElement.querySelector('.received');
+        // jquery
+        var xgqfrmsElement = parentElement.querySelector('.xgqfrms');
 
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
+        // jquery
+        xgqfrmsElement.setAttribute('style','display:block');
 
         console.log('Received Event: ' + id);
     }
 };
-function ready(){
+function device_ready(){
     // jquery
     $(".listening").hide();
     $(".received").show();
     $(".received").html("Hello " +device.model);
+    $(".xgqfrms").show();
+    $(".xgqfrms").html("Hello " +device.model + "xgqfrms");
 };
 app.initialize();

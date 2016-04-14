@@ -34,6 +34,10 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+        // jquery
+        $(document).ready(function(){
+            ready();
+        });
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
@@ -47,5 +51,7 @@ var app = {
         console.log('Received Event: ' + id);
     }
 };
-
+function ready(){
+    // jquery
+}
 app.initialize();

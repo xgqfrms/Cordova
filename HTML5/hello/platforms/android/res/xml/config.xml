@@ -9,7 +9,7 @@
         <param name="android-package" value="org.apache.cordova.device.Device" />
     </feature>
     <allow-intent href="market:*" />
-    <name>HelloWorld</name>
+    <name>Cordova App_001</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
     </description>
